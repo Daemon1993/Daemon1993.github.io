@@ -74,10 +74,10 @@ function loadAllData() {
 }
 
 
-$.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
 	str = JSON.stringify(data, null, 2)
 	// console.log(data)
-	ip = data['geoplugin_request']
+	ip = data['ip']
 	// console.log('ip  '+ip)
 	tag.tag_str='匿名发言   - ip:'+ip
 });
