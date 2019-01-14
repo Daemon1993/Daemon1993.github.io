@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<title>哈宝集中营</title>
 	</head>
 	<body class="main">
@@ -12,10 +13,10 @@
 
 
 
-		<p> 匿名发言 列表 </p>
+		<p id="tag">{{tag_str}} </p>
 		<ul id="lists">
 			<li v-for="item in items">
-				{{item.message +' -> '+item.date}}
+				{{item.message +' -> '+item.date+'  -> '+item.ip}}
 			</li>
 		</ul>
 
