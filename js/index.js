@@ -59,7 +59,7 @@ function loadAllData() {
 			console.log(lists_data.items[0])
 			lists_data.items[0].message = '暂无数据'
 		} else {
-			console.log(res)
+			// console.log(res)
 			datas = []
 			for (var i in res) {
 				datas.push({
